@@ -32,16 +32,23 @@
 
 //=========== function ============
 
-function calTax(income: number, taxYear?: number): number {
-  //make the taxYear optiona to to add
-  if ((taxYear || 2022) < 2022) return income * 1.2;
-  return income * 1.3;
-}
+// function calTax(income: number, taxYear?: number): number {
+//   //make the taxYear optiona to to add
+//   if ((taxYear || 2022) < 2022) return income * 1.2;
+//   return income * 1.3;
+// }
 
-function calTax2(income: number, taxYear = 2022): number {
-  //give a default value to taxYear
-  if (taxYear < 2022) return income * 1.2;
-  return income * 1.3;
-}
+// function calTax2(income: number, taxYear = 2022): number {
+//   //give a default value to taxYear
+//   if (taxYear < 2022) return income * 1.2;
+//   return income * 1.3;
+// }
 
-calTax(10_000, 2023);
+// calTax(10_000, 2023);
+
+//=========== object ============
+// let employee: {
+//   readonly id: number; //we cannot modify later
+//   name: string;
+//   retire: (date: Date) => void; //built-in method
+// } = { id: 1, name: "Mosh", retire: (date: Date) => console.log(date) }; //we should init value
